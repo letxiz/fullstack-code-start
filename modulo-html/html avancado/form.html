@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+      <!--texto-->
+        <div>
+        <label for="fullName">Nome Completo:</label>
+        <input 
+        id="fullName"
+        name="fullName"
+        type="text"
+        placeholder="Nome Completo"/>
+        </div>
+        <!--email-->
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Email"/>
+        </div>
+        <!--data-->
+        <div>
+          <label for="birthDate">Data de Nascimento:</label>
+          <input id="birthDate" name="birthDate" type="date" />
+        </div>
+        <!--senha-->
+        <div>
+          <label for="password">Senha:</label>
+          <input id="password" name="password" type="password" minlength="6"/>
+        </div>
+       
+       <!--radio-->
+        <div>
+          <label>Gênero</label>
+        </div>
+        <div>
+          <input id="male" name="gender" type="radio"/>
+          <label for="male">Masculino</label>
+         
+        </div>
+
+        <div>
+          <input id="female" name="gender" type="radio"/>
+          <label for="female">Feminino</label>
+    
+        </div>
+        <div>
+          <input id="other" name="gender" type="radio"/>
+          <label for="other">Outro</label>
+          
+        </div>
+        <!--checkbox-->
+         <div>
+          <label>Pet</label>
+        </div>
+
+        <div>
+          <input id="dog" name="dog" type="checkbox" />
+          <label for="dog">Cachorro</label>
+        </div>
+
+        <div>
+          <input id="cat" name="cat" type="checkbox" />
+          <label for="cat">Gato</label>
+        </div>
+
+        <div>
+          <input id="bird" name="bird" type="checkbox" />
+          <label for="bird">Pássaro</label>
+        </div>
+        <!--select-->
+        <div>
+          <label for="car">Carro</label>
+
+          <select name="car">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+          <!--textarea-->
+        <div>
+          <label for="about">Sobre mim:</label>
+        </div>
+        <div>
+           <textarea id="about" name="about" rows="4" cols="50"></textarea>
+        </div>
+          <!--submit-->
+        <div>
+          <input type="submit" name="submit" value="Finalizar"/>
+          <input type="reset" name="reset" value="Limpar"/>
+        </div>
+
+    </form>
+
+
+    
+</body>
+</html>

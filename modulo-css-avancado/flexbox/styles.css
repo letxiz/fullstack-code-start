@@ -1,0 +1,14 @@
+.flex-container{
+  display: flex; 
+  flex-direction: row;
+  background-color: red;
+  align-items: center;
+  flex-flow: wrap;
+  height: 700px;
+  align-content:space-between;
+}
+.flex-item{
+  border:  2px solid black;
+  padding: 10px;
+  width: 100px;
+}

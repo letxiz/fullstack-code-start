@@ -1,0 +1,19 @@
+body{
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  transition: all 2s ease;
+}.box:hover{
+  /*transform: skew(25deg);*/
+  /*transform: rotate(45deg);*/
+  /*transform: scale(1.5);*/
+  /*transform: translate(100px, 100px);*/
+   transform: translate(-100px, -100px);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Absolute</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /*
+      position: absolute
+      - O elemento é REMOVIDO do fluxo normal do documento.
+        Outros elementos agem como se ele não existisse.
+      - É posicionado em relação ao ancestral mais próximo
+        que tenha position diferente de "static" (relative, absolute, fixed...).
+      - Se nenhum ancestral tiver position definido, é posicionado
+        em relação ao elemento <html> (viewport/página inteira).
+    */
+
+    /* Container pai com position: relative — serve de referência para o filho absoluto */
+    .container-pai {
+      position: relative;            /* âncora para o filho absoluto */
+      width: 350px;
+      height: 200px;
+      background-color: #dfe8ff;
+      border: 2px solid #3b5bdb;
+      margin-bottom: 30px;
+    }
+
+    /* Filho com position: absolute — posicionado DENTRO do pai relativo */
+    .filho-absoluto {
+      position: absolute;
+      top: 10px;     /* 10px do topo do .container-pai */
+      right: 10px;   /* 10px da borda direita do .container-pai */
+      width: 100px;
+      padding: 8px;
+      background-color: #f03e3e;
+      color: white;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* Exemplo 2: sem pai relativo — o absoluto fica em relação à página */
+    .sem-referencia {
+      width: 350px;
+      height: 120px;
+      background-color: #fff3bf;
+      border: 2px solid #f59f00;
+      margin-bottom: 10px;
+    }
+
+    .legenda {
+      background-color: #f0f0f0;
+      border-left: 4px solid #f03e3e;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>position: absolute</h1>
+  <p>O elemento vermelho tem <code>position: absolute</code>. Ele é posicionado
+     em relação ao pai laranja que tem <code>position: relative</code>.</p>
+
+  <!-- O pai tem position: relative, então o filho absolute se âncora nele -->
+  <div class="container-pai">
+    <p style="padding: 10px;">Pai com <code>position: relative</code></p>
+
+    <!-- Filho absoluto: posicionado a 10px do topo e 10px da direita do pai -->
+    <div class="filho-absoluto">Absoluto<br>top:10 / right:10</div>
+  </div>
+
+  <!-- Container sem position: os filhos absolutos se âncoriam no documento -->
+  <div class="sem-referencia">
+    <p style="padding: 10px;">Este pai <strong>não</strong> tem
+      <code>position</code> definido. Um filho absoluto aqui se ancoraria
+      na página inteira, não neste box.</p>
+  </div>
+
+  <div class="legenda">
+    <strong>Resumo:</strong> sempre defina <code>position: relative</code> no pai
+    quando quiser que o filho <code>absolute</code> fique contido dentro dele.
+  </div>
+
+</body>
+</html>

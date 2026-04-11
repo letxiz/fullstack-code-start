@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Sticky</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /*
+      position: sticky
+      - Híbrido entre relative e fixed.
+      - O elemento começa no fluxo normal (age como relative).
+      - Ao rolar a página, quando ele atingir o limite definido
+        (ex: top: 0), ele "gruda" naquele ponto e age como fixed —
+        MAS só dentro do seu elemento pai/container.
+      - Quando o pai sair da tela, o sticky solta e vai junto.
+      - Muito usado em: cabeçalhos de tabelas, títulos de seções,
+        sub-menus que ficam visíveis enquanto a seção está na tela.
+    */
+
+    h1 {
+      padding: 0 20px;
+    }
+
+    .instrucao {
+      background-color: #fff3bf;
+      border-left: 4px solid #f59f00;
+      padding: 10px 15px;
+      margin: 0 20px 20px;
+      font-size: 14px;
+    }
+
+    /* Cada seção é o "container" que limita o sticky */
+    .secao {
+      margin-bottom: 5px;
+    }
+
+    /* Cabeçalho sticky: gruda no topo ao rolar, mas só dentro de .secao */
+    .secao-titulo {
+      position: sticky;
+      top: 0;             /* gruda quando atingir 0px do topo da viewport */
+      background-color: #1971c2;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 10;        /* fica sobre o conteúdo durante o scroll */
+    }
+
+    /* Conteúdo de cada seção — texto longo para forçar o scroll */
+    .secao-conteudo {
+      padding: 15px 20px;
+      background-color: #f8f9fa;
+      line-height: 1.8;
+    }
+
+    .secao-conteudo p {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>position: sticky</h1>
+
+  <div class="instrucao">
+    <strong>Como testar:</strong> role a página para baixo. O título de cada
+    seção (azul) vai "grudar" no topo enquanto o conteúdo daquela seção ainda
+    estiver visível. Quando a seção terminar, o título é empurrado para fora
+    pelo próximo título.
+  </div>
+
+  <!-- Seção 1: o título sticky gruda no topo enquanto esta seção está visível -->
+  <div class="secao">
+    <div class="secao-titulo">Seção 1 — HTML Básico</div>
+    <div class="secao-conteudo">
+      <p>HTML (HyperText Markup Language) é a linguagem de marcação padrão
+         para criar páginas na web. Com HTML você estrutura o conteúdo.</p>
+      <p>As tags mais comuns são: &lt;h1&gt; a &lt;h6&gt; para títulos,
+         &lt;p&gt; para parágrafos, &lt;a&gt; para links, &lt;img&gt; para imagens.</p>
+      <p>O HTML5 trouxe novas tags semânticas como &lt;header&gt;, &lt;main&gt;,
+         &lt;footer&gt;, &lt;section&gt;, &lt;article&gt; e &lt;nav&gt;.</p>
+      <p>Role para baixo para ver o título desta seção "grudar" no topo
+         e depois ser substituído pelo título da próxima seção.</p>
+    </div>
+  </div>
+
+  <!-- Seção 2: seu próprio título sticky substitui o anterior ao rolar -->
+  <div class="secao">
+    <div class="secao-titulo">Seção 2 — CSS Fundamentos</div>
+    <div class="secao-conteudo">
+      <p>CSS (Cascading Style Sheets) é responsável pela apresentação visual
+         das páginas HTML. Com ele definimos cores, fontes, espaçamentos e layouts.</p>
+      <p>As três formas de aplicar CSS são: inline (atributo style),
+         interno (tag &lt;style&gt; no &lt;head&gt;) e externo (arquivo .css).</p>
+      <p>O modelo de caixa (box model) é fundamental: cada elemento tem
+         content, padding, border e margin.</p>
+      <p>Continue rolando para ver o comportamento sticky se repetir nesta seção.</p>
+    </div>
+  </div>
+
+  <!-- Seção 3 -->
+  <div class="secao">
+    <div class="secao-titulo">Seção 3 — Position no CSS</div>
+    <div class="secao-conteudo">
+      <p><strong>static</strong> — padrão, o elemento segue o fluxo normal.</p>
+      <p><strong>relative</strong> — deslocado em relação à posição original;
+         espaço original é preservado.</p>
+      <p><strong>absolute</strong> — removido do fluxo; posicionado em relação
+         ao ancestral com position não-static.</p>
+      <p><strong>fixed</strong> — removido do fluxo; posicionado em relação
+         à viewport; não se move com o scroll.</p>
+      <p><strong>sticky</strong> — híbrido: relative até atingir o limite definido,
+         então age como fixed dentro do seu container. É o que você está vendo agora!</p>
+    </div>
+  </div>
+
+</body>
+</html>

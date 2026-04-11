@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <h2>Responsividade no Flexbox</h2>
+    <p>Responsividade é a adaptação do site para diferentes telas, como celular, tablet e desktop.</p>
+
+    <h3>Flex-flow (quebra de linha)</h3>
+    <ul>
+      <li><strong>nowrap:</strong> não quebra linha; os itens ficam espremidos.</li>
+      <li><strong>wrap:</strong> quebra linha quando necessário.</li>
+      <li><strong>wrap-reverse:</strong> quebra linha para cima.</li>
+    </ul>
+
+    <h3>Flex Items</h3>
+    <ul>
+      <li><strong>align-self:</strong> alinha cada item no eixo cruzado (<code>stretch</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>).</li>
+      <li><strong>order:</strong> define a ordem dos itens usando números.</li>
+      <li><strong>flex:</strong> controla quanto espaço o item ocupa no eixo principal; valor maior ocupa mais espaço.</li>
+    </ul>
+
+    <p>A prática é essencial para dominar Flexbox. No fim do módulo, projetos reais ajudam a aplicar esse conteúdo.</p>
+  </section>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h2>Box 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+  </div>
+    <div class="flex-item">
+      <h2>Box 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+  </div>
+</body>
+</html>

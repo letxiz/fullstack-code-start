@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./inicio.html">Início</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <div>
+       <label for="name">Nome Completo</label>
+       <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+         <label for="genero">Gênero</label>
+      </div>
+      <div>
+        <input type="radio" id="masc" name="genero" value="masculino">
+        <label for="masc">Masculino</label>
+      </div>
+      <div>
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="fem">Feminino</label>
+      </div>
+      <div>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+      </div>
+      <div>
+        <label>Quais serviços você quer contratar?</label>
+      </div>
+      <div>
+        <input type="checkbox" id="landing-page" name="servicos" value="landing-page">
+        <label for="landing-page">Criação de Landing Page</label>
+      </div>
+      <div>
+        <input type="checkbox" id="creator-app" name="servicos" value="creator-app">
+        <label for="creator-app">Criação de Aplicativos</label>
+      </div>
+      <div>
+        <input type="checkbox" id="format-computer" name="servicos" value="formatacao-computador">
+        <label for="format-computer">Formatação de Computadores</label>
+      </div>
+      <div>
+        <label for="message"> Sua Mensagem</label>
+      </div>
+      <div>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+      </div>
+      <div>
+        <button type="submit">Finalizar</button>
+        <button type="reset">Enviar</button>
+      </div>
+
+
+    </form>
+  </main>
+  
+</body>
+</html>

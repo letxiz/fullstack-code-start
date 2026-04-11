@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Relative</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /*
+      position: relative
+      - O elemento permanece no fluxo normal do documento.
+      - As propriedades top, left, right, bottom deslocam o elemento
+        em relação à sua posição ORIGINAL (onde ele estaria normalmente).
+      - O espaço original do elemento é preservado — outros elementos
+        continuam se comportando como se ele estivesse no lugar de origem.
+        Quando vir pedindo posição normal ou posição original,
+         é isso que significa que será <code>relative</code>.
+    */
+
+    .caixa-normal {
+      width: 200px;
+      padding: 15px;
+      background-color: #a8d5a2;
+      border: 2px solid #4a7c59;
+      margin-bottom: 10px;
+    }
+
+    .caixa-relativa {
+      position: relative;
+      top: 30px;    /* desloca 30px para baixo da posição original */
+      left: 50px;   /* desloca 50px para a direita da posição original */
+      width: 200px;
+      padding: 15px;
+      background-color: #f4a261;
+      border: 2px dashed #e76f51;
+    }
+
+    .caixa-depois {
+      width: 200px;
+      padding: 15px;
+      background-color: #a8d5a2;
+      border: 2px solid #4a7c59;
+      margin-top: 10px;
+    }
+
+    .legenda {
+      margin-top: 50px;
+      background-color: #f0f0f0;
+      border-left: 4px solid #e76f51;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>position: relative</h1>
+  <p>O elemento laranja está com <code>position: relative</code> deslocado
+     <strong>30px para baixo</strong> e <strong>50px para a direita</strong>
+     da sua posição original. Note que o espaço original dele ainda é reservado
+     (a caixa verde de baixo não "sobe" para preencher o espaço vazio).</p>
+
+  <!-- Caixa que está no fluxo normal, antes do elemento relativo -->
+  <div class="caixa-normal">Caixa normal (antes)</div>
+
+  <!-- Este elemento se desloca em relação à posição onde ele "ficaria" normalmente -->
+  <div class="caixa-relativa">Sou relativo! top: 30px / left: 50px</div>
+
+  <!-- Caixa que vem depois — o espaço original do relativo é mantido -->
+  <div class="caixa-depois">Caixa normal (depois) — veja o espaço reservado acima</div>
+
+  <div class="legenda">
+    <strong>Dica:</strong> <code>position: relative</code> é muito usado como
+    "âncora" para filhos com <code>position: absolute</code> (veja absolute.html).
+  </div>
+
+</body>
+</html>

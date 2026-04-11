@@ -1,0 +1,60 @@
+body{
+  background-color: #222;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  background-color:white ;
+  position: relative;
+  top:0;
+  left: 0;
+  
+  /* Animação */
+  /*animation-name: grow-width;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;*/
+
+
+  animation-name: move;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+
+}
+
+@keyframes move{
+  25%{
+    top:200px;
+    left: 0;
+    border-radius: 50px;
+    background-color: red;
+  }
+  50%{
+    left: 200px;
+    top:200px;
+    border-radius: 3px;
+    background-color: blue;
+}
+  75%{
+    left: 200px;
+    top:0;
+    border-radius: 50px;
+    background-color: green;
+  }
+  100%{
+    left: 0;
+    top:0;
+    border-radius: 3px;
+    background-color: white;
+  }
+
+}
+@keyframes grow-width{
+  to{
+    width: 500px;
+    background-color: red;
+  }
+}

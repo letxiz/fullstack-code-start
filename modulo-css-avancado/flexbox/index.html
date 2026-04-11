@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <h2>O que é Flexbox?</h2>
+    <p>Flexbox (Flexible Box Module) é uma técnica de layout no CSS para criar layouts flexíveis, dinâmicos e responsivos. Para ativá-lo, define-se <code>display: flex;</code> no elemento pai (Flex Container) — os filhos (Flex Items) se posicionam lado a lado por padrão.</p>
+
+    <h3>Propriedades principais</h3>
+    <ul>
+      <li><strong>flex-direction:</strong> define a direção — <code>row</code> (padrão, itens lado a lado; main horizontal, cross vertical) ou <code>column</code> (um abaixo do outro; main vertical, cross horizontal).</li>
+      <li><strong>justify-content:</strong> alinha no main axis — <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>.</li>
+      <li><strong>align-items:</strong> alinha no cross axis — <code>stretch</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>.</li>
+      <li><strong>align-content:</strong> alinha múltiplas linhas — <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>.</li>
+    </ul>
+
+    <h3>Eixos</h3>
+    <ul>
+      <li><strong>Main Axis:</strong> direção principal — horizontal em <code>row</code>, vertical em <code>column</code>.</li>
+      <li><strong>Cross Axis:</strong> direção perpendicular ao main axis.</li>
+    </ul>
+  </section>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h2>Box 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+  </div>
+    <div class="flex-item">
+      <h2>Box 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 5</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 6</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+  </div>
+  <div class="flex-item">
+    <h2>Box 7</h2>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 8</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 9</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.  
+      </p>
+    </div>
+    <div class="flex-item">
+      <h2>Box 10</h2> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quas eligendi quos voluptas.
+    </p>
+    </div>
+  </div>
+</body>
+</html>

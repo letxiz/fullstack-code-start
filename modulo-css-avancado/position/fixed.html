@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position: Fixed</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      /* Espaço extra para o conteúdo não ficar atrás do header fixo */
+      padding-top: 80px;
+    }
+
+    /*
+      position: fixed
+      - O elemento é REMOVIDO do fluxo e posicionado em relação
+        à VIEWPORT (janela do navegador), não ao documento.
+      - Ele NÃO se move ao rolar a página — fica sempre visível
+        no mesmo lugar da tela.
+      - Uso clássico: barras de navegação, botões "voltar ao topo",
+        banners de cookies, chats flutuantes.
+    */
+
+    /* Barra de navegação que fica sempre no topo da tela */
+    .navbar-fixa {
+      position: fixed;
+      top: 0;       /* colado ao topo da viewport */
+      left: 0;      /* começa na borda esquerda */
+      width: 100%;  /* ocupa toda a largura da tela */
+      background-color: #1971c2;
+      color: white;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 1000; /* fica acima de outros elementos */
+      box-sizing: border-box;
+    }
+
+    /* Botão flutuante no canto inferior direito */
+    .botao-flutuante {
+      position: fixed;
+      bottom: 20px;   /* 20px da borda inferior da tela */
+      right: 20px;    /* 20px da borda direita da tela */
+      background-color: #e03131;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Conteúdo longo para demonstrar o scroll */
+    .conteudo p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      max-width: 600px;
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    .legenda {
+      background-color: #f0f0f0;
+      border-left: 4px solid #1971c2;
+      padding: 10px 15px;
+      font-size: 14px;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar fixa: não some ao rolar a página -->
+  <nav class="navbar-fixa">Navbar Fixa — position: fixed</nav>
+
+  <h1>position: fixed</h1>
+  <p>Role a página para ver que a navbar azul no topo e o botão vermelho
+     no canto inferior direito <strong>ficam sempre visíveis</strong>, independente
+     do scroll.</p>
+
+  <div class="legenda">
+    <strong>Como funciona:</strong> <code>position: fixed</code> ancora o elemento
+    na viewport. As propriedades <code>top</code>, <code>bottom</code>,
+    <code>left</code> e <code>right</code> definem a distância das bordas da tela.
+  </div>
+
+  <!-- Conteúdo longo para forçar scroll -->
+  <div class="conteudo">
+    <p>Parágrafo 1 — Role para baixo para ver o efeito do position: fixed.</p>
+    <p>Parágrafo 2 — A navbar azul permanece no topo mesmo enquanto você rola.</p>
+    <p>Parágrafo 3 — O botão vermelho no canto inferior direito também é fixed.</p>
+    <p>Parágrafo 4 — Esse comportamento é muito usado em menus de navegação.</p>
+    <p>Parágrafo 5 — Outro uso comum: banners de aceite de cookies.</p>
+    <p>Parágrafo 6 — Chats de suporte ao cliente também usam position: fixed.</p>
+    <p>Parágrafo 7 — Note que o fixed é em relação à viewport, não ao pai.</p>
+    <p>Parágrafo 8 — Diferente do sticky, o fixed nunca está no fluxo do documento.</p>
+    <p>Parágrafo 9 — Continue rolando...</p>
+    <p>Parágrafo 10 — Chegou ao final! A navbar e o botão ainda estão visíveis.</p>
+  </div>
+
+  <!-- Botão flutuante fixo no canto da tela -->
+  <button class="botao-flutuante" title="Voltar ao topo"
+          onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+</body>
+</html>
