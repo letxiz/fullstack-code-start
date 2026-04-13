@@ -1,5 +1,8 @@
-<!-- DESAFIO 01: -->
-<!-- Posicione o elemento h1 de modo que ele sempre fique 50px a partir do topo e 10px a partir da esquerda, baseando-se na visão do usuário. -->
+<!-- DESAFIO 01 -->
+<!-- Objetivo: deixar o h1 sempre no mesmo lugar da tela do usuário (viewport),
+     independentemente de rolagem da página. -->
+<!-- Requisito exato: 50px do topo da tela e 10px da lateral esquerda da tela. -->
+<!-- Solução esperada: usar position: fixed, porque fixed usa a viewport como referência. -->
 
 <!DOCTYPE html>
 <html>
@@ -8,9 +11,9 @@
 
     <style>
       h1 {
-        position: fixed; /* Fixa o elemento em relação à viewport */
-        top: 50px;       /* 50px a partir do topo da tela */
-        left: 10px;      /* 10px a partir da borda esquerda da tela */  
+        position: fixed; /* Mantém fixo na tela, mesmo ao rolar */
+        top: 50px;       /* Distância de 50px em relação ao topo da viewport */
+        left: 10px;      /* Distância de 10px em relação à esquerda da viewport */
       }
     </style>
   </head>

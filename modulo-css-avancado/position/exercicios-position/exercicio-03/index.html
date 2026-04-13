@@ -1,5 +1,8 @@
-<!-- DESAFIO 03: -->
-<!-- Posicione o elemento h1 de modo que ele sempre fique 50px a partir do topo, baseando-se na página HTML. -->
+<!-- DESAFIO 03 -->
+<!-- Objetivo: posicionar o h1 usando a página (documento) como referência principal. -->
+<!-- Requisito exato: o h1 deve ficar a 50px do topo da página HTML. -->
+<!-- Solução esperada: usar position: absolute com top: 50px.
+  Como não existe ancestral posicionado, a referência vira a página. -->
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +11,8 @@
 
     <style>
       h1 {
-        position: absolute;
-        top: 50px;
+        position: absolute; /* Sai do fluxo normal e usa o bloco de referência absoluto */
+        top: 50px; /* Distância de 50px do topo da página/referência atual */
       }
     </style>
   </head>

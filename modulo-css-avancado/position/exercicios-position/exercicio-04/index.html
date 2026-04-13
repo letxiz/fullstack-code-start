@@ -1,5 +1,8 @@
-<!-- DESAFIO 04: -->
-<!-- Posicione o elemento h1 de modo que ele sempre fique 50px a partir do topo, baseando-se no seu elemento pai mais próximo. -->
+<!-- DESAFIO 04 -->
+<!-- Objetivo: fazer o h1 usar o pai mais próximo como referência de posicionamento. -->
+<!-- Requisito exato: o h1 deve ficar 50px do topo do elemento pai posicionado. -->
+<!-- Solução esperada: definir o pai (div) com position: relative,
+     e o h1 com position: absolute + top: 50px. -->
 
 <!DOCTYPE html>
 <html>
@@ -8,12 +11,12 @@
 
     <style>
       div {
-        position: relative;
+        position: relative; /* Cria o contexto de referência para o filho absoluto */
       }
 
       h1 {
-        position: absolute;
-        top: 50px;
+        position: absolute; /* Passa a se posicionar em relação ao div (pai posicionado) */
+        top: 50px; /* Fica 50px abaixo do topo do div */
       }
     </style>
   </head>

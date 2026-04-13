@@ -1,5 +1,8 @@
-<!-- DESAFIO 02: -->
-<!-- Posicione o elemento h1 de modo que ele sempre fique 100px a partir do topo, baseando-se na sua posição normal. -->
+<!-- DESAFIO 02 -->
+<!-- Objetivo: mover o h1 para baixo sem tirá-lo completamente do fluxo normal da página. -->
+<!-- Requisito exato: o h1 deve ficar 100px abaixo da sua posição original (normal). -->
+<!-- Solução esperada: usar position: relative com top: 100px,
+     pois relative desloca o elemento com base na própria posição inicial. -->
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +11,8 @@
 
     <style>
       h1 {
-        position: relative;
-        top: 100px; /* 100px a partir da posição normal */
+        position: relative; /* Mantém referência na posição original do próprio h1 */
+        top: 100px; /* Desloca 100px para baixo em relação ao ponto onde ele estaria */
       }
     </style>
   </head>
