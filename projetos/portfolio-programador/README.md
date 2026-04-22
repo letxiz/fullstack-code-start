@@ -57,8 +57,15 @@ Dica: você pode usar a extensão Live Server para desenvolvimento local com atu
 
 ## Prévia do projeto
 
+### Desktop
+
 <p align="center">
-	<img src="image.png" alt="Preview da página inicial" width="420" />
-	<img src="image-1.png" alt="Preview das seções internas" width="420" />
+  <img src="image.png" alt="Preview desktop" width="780" />
+</p>
+
+### Mobile
+
+<p align="center">
+  <img src="image-1.png" alt="Preview mobile" width="260" />
 </p>
 
