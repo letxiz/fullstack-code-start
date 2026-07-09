@@ -1,75 +1,66 @@
-# Projeto: Lista de Tarefas
+# Lista de tarefas
 
-Aplicação simples de lista de tarefas desenvolvida para praticar os fundamentos de **HTML**, **CSS** e **JavaScript**, com foco em **manipulação de DOM**, **eventos** e **armazenamento local**.
-
-## Objetivo
-
-Construir uma interface funcional onde seja possível:
-
-- adicionar novas tarefas;
-- marcar tarefas como concluídas;
-- remover tarefas;
-- manter os dados salvos no navegador mesmo após recarregar a página.
+Aplicação para criar, concluir e remover tarefas. Os dados são salvos no próprio navegador com `localStorage`, por isso continuam disponíveis depois que a página é recarregada.
 
 ## Funcionalidades
 
-- Campo de texto para digitar a tarefa.
-- Botão para adicionar tarefa.
-- Validação para evitar tarefas vazias.
-- Clique no texto da tarefa para alternar entre concluída e não concluída.
-- Ícone de lixeira para excluir uma tarefa.
-- Persistência de dados usando `localStorage`.
+- Adição de novas tarefas;
+- Validação para impedir tarefas vazias;
+- Marcação de tarefas como concluídas;
+- Exclusão de tarefas;
+- Armazenamento automático no navegador;
+- Recuperação das tarefas ao abrir a página novamente.
 
-## O Que Foi Abordado
+Para concluir ou reabrir uma tarefa, clique no texto dela. Para removê-la, clique no ícone de lixeira.
 
-### HTML
+## Tecnologias
 
-- Estrutura base da página.
-- Organização dos blocos da aplicação (`container`, formulário de tarefa e lista).
-- Inclusão de fontes externas (Google Fonts) e ícones (Font Awesome).
+- HTML5;
+- CSS3;
+- JavaScript;
+- `localStorage`;
+- Google Fonts;
+- Font Awesome.
 
-### CSS
+Google Fonts e Font Awesome são carregados pela internet. Sem conexão, a fonte e o ícone de lixeira podem não aparecer.
 
-- Reset básico com seletor universal.
-- Layout centralizado com Flexbox.
-- Estilização de componentes (input, botão e lista).
-- Estados visuais com classes utilitárias:
-	- `.error` para campo inválido;
-	- `.completed` para tarefa concluída.
-- Efeitos visuais com `hover` e `transition`.
+## Como executar
 
-### JavaScript
+1. Baixe ou clone este repositório.
+2. Abra a pasta `projetos/lista-de-tarefas`.
+3. Abra o arquivo `index.html` no navegador.
 
-- Seleção de elementos com `querySelector`.
-- Manipulação dinâmica do DOM com:
-	- `createElement`;
-	- `appendChild`;
-	- `classList.add`, `classList.remove` e `classList.toggle`.
-- Tratamento de eventos com `addEventListener`.
-- Criação de funções para separar responsabilidades:
-	- validação de entrada;
-	- adição de tarefa;
-	- conclusão de tarefa;
-	- remoção de tarefa;
-	- sincronização com `localStorage`.
-- Conversão de dados com `JSON.stringify` e `JSON.parse`.
+Não é necessário instalar dependências.
 
-## Estrutura do Projeto
+## Como usar
 
-- `index.html`: estrutura da interface.
-- `styles.css`: estilos da aplicação.
-- `scripts.js`: lógica da aplicação.
+1. Digite uma tarefa no campo de texto.
+2. Clique em **Adicionar**.
+3. Clique no texto de uma tarefa para marcá-la como concluída.
+4. Clique na lixeira para excluir a tarefa.
 
-## Como Executar
+Se o botão for pressionado com o campo vazio, o campo será destacado em vermelho.
 
-1. Abra a pasta do projeto.
-2. Execute o arquivo `index.html` no navegador.
-3. Digite uma tarefa e clique em **Adicionar**.
+## Armazenamento dos dados
 
-## Aprendizados Práticos
+As tarefas são armazenadas na chave `tasks` do `localStorage`. Os dados ficam somente no navegador e no dispositivo em uso. Limpar os dados do site no navegador também remove as tarefas salvas.
 
-Este projeto reforça a base de front-end ao conectar **estrutura (HTML)**, **apresentação (CSS)** e **comportamento (JavaScript)** em um fluxo real de uso, incluindo persistência de dados no navegador.
+## Estrutura do projeto
 
-Print de como ficou:
+```text
+lista-de-tarefas/
+├── index.html
+├── scripts.js
+├── styles.css
+├── image.png
+└── README.md
+```
 
-<img src="image.png" alt="Print de como ficou" width="500" />
+- `index.html`: estrutura da aplicação;
+- `styles.css`: aparência da página e estados visuais;
+- `scripts.js`: criação, conclusão, exclusão e armazenamento das tarefas;
+- `image.png`: captura de tela do projeto.
+
+## Prévia
+
+![Prévia da lista de tarefas](image.png)

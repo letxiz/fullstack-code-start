@@ -1,71 +1,81 @@
-# Portfolio Programador
+# Portfólio de programador
 
-Landing page de portfólio pessoal com foco em apresentação profissional, habilidades, projetos e contato.
+Página de portfólio pessoal criada para apresentar um desenvolvedor, suas habilidades, seus projetos e formas de contato.
 
-## Sobre o projeto
+## Seções da página
 
-Este projeto foi desenvolvido como uma página única (one page) para exibir informações de um desenvolvedor web, com as seguintes seções:
+- Apresentação inicial;
+- Sobre mim;
+- Habilidades em HTML, CSS e JavaScript;
+- Projetos;
+- Formulário de contato;
+- Links para redes sociais.
 
-- Início (showcase)
-- Sobre mim
-- Habilidades
-- Projetos
-- Contato
-- Rodapé com redes sociais
+## Responsividade
 
-## Tecnologias utilizadas
+O layout principal é voltado para telas maiores. Em telas com até `1024px`, o arquivo `mobile.css` reorganiza o conteúdo em uma coluna, reduz textos e imagens e oculta o menu superior.
 
-- HTML5
-- CSS3
-- CSS responsivo com media query em arquivo separado
-- Google Fonts (fonte Poppins)
+## Tecnologias
+
+- HTML5;
+- CSS3;
+- Flexbox;
+- Media queries;
+- Google Fonts;
+- Font Awesome.
+
+As fontes e os ícones são carregados pela internet.
+
+## Como executar
+
+1. Baixe ou clone este repositório.
+2. Abra a pasta `projetos/portfolio-programador`.
+3. Abra o arquivo `index.html` no navegador.
+
+Não é necessário instalar dependências. Durante o desenvolvimento, também é possível usar uma extensão como Live Server.
 
 ## Estrutura do projeto
 
 ```text
 portfolio-programador/
-├─ index.html
-├─ styles.css
-├─ mobile.css
-├─ image.png
-├─ image-1.png
-└─ images/
-	 ├─ avatar.png
-	 ├─ showcase.jpg
-	 ├─ html-icon.png
-	 ├─ css-icon.png
-	 ├─ javascript-icon.png
-	 ├─ project-1.jpg
-	 ├─ project-2.jpg
-	 ├─ project-3.jpg
-	 └─ project-4.jpg
+├── images/
+│   ├── avatar.png
+│   ├── css-icon.png
+│   ├── html-icon.png
+│   ├── javascript-icon.png
+│   ├── project-1.jpg
+│   ├── project-2.jpg
+│   ├── project-3.jpg
+│   ├── project-4.jpg
+│   └── showcase.jpg
+├── index.html
+├── styles.css
+├── mobile.css
+├── image.png
+├── image-1.png
+└── README.md
 ```
 
-## Layout e responsividade
+- `index.html`: conteúdo e estrutura da página;
+- `styles.css`: estilos para o layout principal;
+- `mobile.css`: ajustes para telas menores;
+- `images/`: imagens usadas nas seções;
+- `image.png` e `image-1.png`: capturas das versões desktop e mobile.
 
-- Layout desktop com navegação no topo e seções bem definidas.
-- Ajustes para telas menores em `mobile.css` (`@media (max-width: 1024px)`).
-- Cards e blocos reorganizados para leitura vertical no mobile.
+## Limitações atuais
 
-## Como executar
+- Os itens do menu não são links e ainda não levam às seções;
+- O formulário de contato não envia mensagens;
+- Parte do conteúdo usa textos de exemplo;
+- Os projetos apresentados não possuem links;
+- Os links das redes sociais são exemplos e devem ser substituídos pelos endereços reais.
 
-1. Clone ou baixe o projeto.
-2. Abra a pasta no VS Code.
-3. Execute o arquivo `index.html` no navegador.
-
-Dica: você pode usar a extensão Live Server para desenvolvimento local com atualização automática.
-
-## Prévia do projeto
+## Prévia
 
 ### Desktop
 
-<p align="center">
-  <img src="image.png" alt="Preview desktop" width="780" />
-</p>
+![Prévia do portfólio em desktop](image.png)
 
 ### Mobile
 
-<p align="center">
-  <img src="image-1.png" alt="Preview mobile" width="260" />
-</p>
-
+<img src="image-1.png" alt="Prévia do portfólio em tela menor" width="300">
