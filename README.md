@@ -1,58 +1,54 @@
 # 📚 Full Stack Club - Code Start
 
-Repositório com meus estudos do curso Code Start do Full Stack Club.
+Este repositório reúne os estudos, exercícios e projetos práticos desenvolvidos durante o curso Code Start do Full Stack Club, com foco no aprendizado de desenvolvimento front-end.
 
-## 🚀 Sobre
+## 🚀 Sobre o projeto
 
-Este repositório contém exercícios, desafios e projetos desenvolvidos durante o curso, com foco em aprender desenvolvimento web do zero.
+O projeto tem como objetivo consolidar os fundamentos de HTML, CSS e JavaScript, além de explorar conceitos intermediários e avançados, como manipulação do DOM, estilização sofisticada, responsividade e criação de interfaces interativas.
 
-## 📁 Estrutura
+## 📁 Estrutura do repositório
 
-- 📂 modulo-html  
-  - Estrutura básica de páginas  
-  - Navegação entre páginas  
-  - Desafio prático  
+- modulo-html: fundamentos de marcação e estrutura de páginas.
+- modulo-css: estilização, organização visual e aplicação de estilos.
+- modulo-css-avancado: layouts avançados, responsividade e animações.
+- modulo-js: lógica de programação e conceitos essenciais de JavaScript.
+- modulo-js-avancado: recursos mais modernos da linguagem, como arrow functions, destructuring e classes.
+- manipulacao-dom: interação dinâmica com elementos da página.
+- projetos: aplicações completas desenvolvidas ao longo do curso.
 
-- 📂 modulo-css  
-  - Estilização com CSS  
+## 💼 Projetos desenvolvidos
 
-- 📂 modulo-css-avancado  
-  - Técnicas avançadas de layout e responsividade  
+- Calculadora
+- Formulário
+- Jogo da Velha
+- Lista de Tarefas
+- Relógio
+- Previsão do Tempo
+- Portfólio de Programador
 
-- 📂 modulo-javascript  
-  - Lógica de programação com JavaScript  
+## 🛠️ Tecnologias utilizadas
 
-- 📂 manipulacao-dom  
-  - Interação com elementos HTML usando JavaScript  
+- HTML5
+- CSS3
+- JavaScript
+- Git e GitHub
 
-- 📂 javascript-avancado  
-  - Conceitos avançados da linguagem  
+## ▶️ Como executar
 
-## 💼 Projetos
-
-- 🌦️ Projeto: Previsão do Tempo  
-- 💼 Projeto: Portfólio de Programador  
-- ✅ Projeto: Lista de Tarefas  
-- 📄 Projeto: Formulário  
-- 🧮 Projeto: Calculadora  
-- ⏰ Projeto: Relógio  
-- ❌⭕ Projeto: Jogo da Velha  
-
-## 💻 Tecnologias utilizadas
-
-- HTML  
-- CSS  
-- JavaScript  
+1. Clone o repositório em sua máquina.
+2. Acesse a pasta do projeto desejado.
+3. Abra o arquivo HTML principal no navegador para visualizar a aplicação.
 
 ## 🎯 Objetivo
 
-Construir uma base sólida em desenvolvimento front-end e evoluir para projetos completos e profissionais.
+Desenvolver uma base sólida em front-end, fortalecer a prática de programação e construir projetos completos, funcionais e bem estruturados.
 
-## 📌 Status
+## ✅ Status
 
-🚧 Em andamento
+Projeto finalizado e organizado, com conteúdo completo e projetos práticos concluídos.
 
 ## ✨ Autor
 
-Leticia Alves  
-Projeto desenvolvido como parte do curso Code Start do Full Stack Club, com foco na prática de desenvolvimento web.
+Letícia Alves
+
+Desenvolvido como parte do curso Code Start do Full Stack Club, com foco em aprendizagem prática e evolução técnica.
